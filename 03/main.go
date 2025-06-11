@@ -32,12 +32,5 @@ func main() {
 		go getURLStat(i, url, &wg) //передаем указатель
 	}
 
-	// var url string
-	// url = "https://avito.ru"
-	// getURLStat(url)
-	//	time.Sleep(time.Second * 5)
-	// go func() {
-	// 	wg.Wait()
-	// }()
 	wg.Wait()
 }
